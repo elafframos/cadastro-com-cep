@@ -1,22 +1,63 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    font-size: 110%;
+    padding: 20px;
 }
 
-body{
-    background-color: antiquewhite;
-    text-align: center;
-    margin-top: 40px;
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
 }
 
-button{
-    background-color: rgb(0, 255, 21);
+label {
+    display: block;
+    margin-bottom: 8px; /* Reduzido */
+    font-weight: bold;
+    font-size: 14px; /* Tamanho de letra reduzido */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px; /* Reduzido */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px; /* Reduzido */
+    box-sizing: border-box;
+    font-size: 14px; /* Tamanho de letra reduzido */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 10px;
-    padding: 5px;
+    padding: 8px; /* Reduzido */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Tamanho de letra reduzido */
+    width: 100%;
 }
 
-button:hover{
-    background-color: rgb(0, 207, 0);
-    cursor: pointer;
+button:hover {
+    background-color: #0056b3;
+}
+
+.required {
+    color: red;
+    font-size: 0.8em; /* Tamanho de letra reduzido */
 }
