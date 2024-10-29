@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscador de Endereço</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form method="get" action=".">
+        <label>Nome*
+            <input type="text" class="nome" required>
+        </label>
+        <label>E-mail*
+            <input type="email" class="email" required>
+        </label>
+        <label>Nascimento*
+            <input type="date" class="data" required>
+        </label>
+        <label>Qual sua área?*
+            <select class="area" required>
+                <option value="">Selecione uma das opções</option>
+                <option value="">Full-Stack</option>
+                <option value="">Front-End</option>
+                <option value="">Back-End</option>
+            </select>
+            </label>
+        <label>Cep*
+        <input name="cep" type="text" required id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value)" /></label><br />
+        <label>Cidade*
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado*
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+
+        <button onclick="cadastro()">Enviar</button>
+      </form>
 
     <script src="script.js"></script>
 </body>
